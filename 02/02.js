@@ -49,7 +49,7 @@ window.onload = function init()
     gl.enableVertexAttribArray( vPosition );
 
     render();
-}
+};
 
 function lineDDA( x0, y0, xEnd, yEnd){
     var dx=xEnd-x0,dy=yEnd-y0,steps,k;
