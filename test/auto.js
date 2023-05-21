@@ -15,3 +15,8 @@ function readQRCode() {
         });
     html5QrcodeScanner.render(onScanSuccess);
 }
+function saveQRCode() {
+    var canvas = document.getElementById("qrcode");
+    var img = canvas.toDataURL("image/png");
+    document.write('<img src="'+img+'"/>');
+}
